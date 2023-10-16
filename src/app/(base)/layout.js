@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function HomeLayout({ children }) {
     return (
-     <div className="container">
+     <div className="w-full">
         <Sidebar/>
             <div className=" pl-20">{children}</div> 
      </div>   
