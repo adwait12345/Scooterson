@@ -11,9 +11,9 @@ export const metadata = {
 
 export default function HomeLayout({ children }) {
     return (
-        <div className="container">
+        <div className="w-full">
 
-            <div className="">{children}</div>
+            <div className="w-full">{children}</div>
         </div>
     )
 }
