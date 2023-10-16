@@ -1,0 +1,9 @@
+ .leaflet-left {
+     right: 10px !important;
+     bottom: 30px !important;
+     left: auto;
+     top: auto
+ }
+ .leaflet-popup-content{
+    width: 300px;
+ }
