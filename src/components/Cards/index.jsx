@@ -276,7 +276,9 @@ console.log(Response)
 
                         </Grid>
                         <div className="mt-6">
-                            <Card>
+                            {loading?
+                        <Card className="bg-gray-300 rounded-lg animate-pulse h-[415px]"></Card>
+                            :           <Card className="">
                                 <>
                                     <div className="md:flex justify-between">
                                         <div>
@@ -317,6 +319,8 @@ console.log(Response)
                                     </div>
                                 </>
                             </Card>
+                            }
+         
                         </div>
                         {/* <div className="mt-6">
                             <Card>

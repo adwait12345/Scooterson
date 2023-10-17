@@ -66,20 +66,20 @@ export default function Sidebar() {
                         </button>
                     </Link>
 
-                    <Link href="/message">
-                        <button className=' active:bg-black p-2 rounded active:text-[#fff]  '>
-                            <Message />
+                    <Link href="/performance">
+                        <button className={` p-2 rounded  ${router == "/performance" ? "bg-black text-[#fff]" : "bg-white text-black  "}`}>
+                        <Settings/>
                         </button>
                     </Link>
 
                     <Link href="/payment">
-                        <button className=' active:bg-black p-2 rounded active:text-[#fff]  '>
+                        <button className={` p-2 rounded  ${router == "/payment" ? "bg-black text-[#fff]" : "bg-white text-black  "}`}>
 
                             <Transactions />
                         </button>
                     </Link>
                     <Link href="/date">
-                        <button className=' active:bg-black p-2 rounded active:text-[#fff]  '>
+                        <button className={` p-2 rounded  ${router == "/date" ? "bg-black text-[#fff]" : "bg-white text-black  "}`}>
 
                             <Date />
                         </button>
@@ -90,12 +90,10 @@ export default function Sidebar() {
 
                 </div>
                 <div className=" w-full flex flex-col items-center mt-24 gap-10 ">
-                    <Link href="/settings">
                         <button className=' active:bg-black p-2 rounded active:text-[#fff]  '>
 
-                            <Settings />
+                            <Message />
                         </button>
-                    </Link>
 
 
                     <Image className=' rounded-full' src="/profile.png" alt='' width={40} height={40} />
@@ -108,7 +106,7 @@ export default function Sidebar() {
                     <div className="flex flex-col items-center w-full overflow-y-scroll h-full no-scrollbar ">
                         <div className="flex flex-col mt-14 w-full  items-center">
                             <Search />
-                            <div className="w-10/12 flex items-center ml-10 mt-5 gap-5">
+                            <div className="w-10/12 flex items-center ml-6 mt-5 gap-5">
                                 <Live />
                                 <p className=' font-Poppins font-medium'> Active Rolley</p>
                             </div>
